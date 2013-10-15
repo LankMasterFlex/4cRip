@@ -136,7 +136,8 @@
             // statusLabel
             // 
             this.statusLabel.Name = "statusLabel";
-            this.statusLabel.Size = new System.Drawing.Size(0, 17);
+            this.statusLabel.Size = new System.Drawing.Size(26, 17);
+            this.statusLabel.Text = "Idle";
             // 
             // MainForm
             // 
@@ -152,6 +153,7 @@
             this.Controls.Add(this.lblThread);
             this.Controls.Add(this.lblBoard);
             this.Controls.Add(this.comboBoard);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MainForm";
             this.Text = "4cRip";
             ((System.ComponentModel.ISupportInitialize)(this.numThread)).EndInit();

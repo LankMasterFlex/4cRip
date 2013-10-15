@@ -10,7 +10,9 @@ namespace _4cRip
     {
         private readonly string[] m_boardNames = new string[]
         {
-            "b",
+            "v",
+            "g",
+            "sci",
         };
 
         public MainForm()
@@ -24,7 +26,8 @@ namespace _4cRip
                 comboBoard.Items.Add(string.Concat('/', board, '/'));
             }
 
-            comboBoard.SelectedIndex = 0;
+            if(comboBoard.Items.Count > 0)
+                comboBoard.SelectedIndex = 0;
         }
 
         private void SetLabel(string fmt, params object[] args)
